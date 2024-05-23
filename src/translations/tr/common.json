@@ -2,5 +2,10 @@
   "home": "Anasayfa",
   "about": "Hakkımızda",
   "contact": "İletişim",
-  "products": "Ürünler"
+  "products": "Ürünler",
+  "who-we-are": "Biz Kimiz?",
+  "who-we-are-explanation": "Sektördeki tecrübemiz ve üretimi takip becerimiz ile müşteri memnuniyetinin esas olduğu, sürdürülebilir bir üretim için çalışıyoruz.",
+  "production": "Üretim",
+  "production-explanation": "İplikten mamule kadar olan periyodun tümü profesyonelce işletilerek, ürünlerin kalite standartları, talebe uygun düzeyde olması sağlanarak müşterilerimize servisi yapılmaktadır.",
+  "examine-product": "Ürünleri İnceleyin"
 }

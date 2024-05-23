@@ -2,5 +2,10 @@
   "home": "Inicio",
   "about": "Acerca de",
   "contact": "Contacto",
-  "products": "Productos"
+  "products": "Productos",
+  "who-we-are": "Quienes somos",
+  "who-we-are-explanation": "Estamos trabajando para lograr una producción sostenible con un enfoque principal en la satisfacción del cliente, aprovechando nuestra experiencia en la industria y nuestras habilidades de monitoreo de la producción.",
+  "production": "Producción",
+  "production-explanation": "Todo el período, desde el hilo hasta el producto terminado, se gestiona profesionalmente para garantizar que los productos cumplan con los estándares de calidad y se adapten a la demanda de los clientes, brindando servicio a nuestros clientes.",
+  "examine-product": "Examinar los productos"
 }
