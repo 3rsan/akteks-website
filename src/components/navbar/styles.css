@@ -27,7 +27,7 @@
 /*---------------------------------------
   NAVIGATION               
 -----------------------------------------*/
-.navbar {
+.app .navbar {
   background: var(--white-color);
   position: fixed;
   top: 0;
@@ -57,7 +57,7 @@ h4 span {
   transform: translate(0, -150%);
 }
 
-.navbar-brand {
+.navbar .navbar-brand {
   color: var(--dark-color);
   font-size: 24px;
   font-weight: var(--font-weight-light);
@@ -107,11 +107,6 @@ h4 span {
 .navbar .nav-link:hover {
   color: var(--primary-color);
 }
-
-/* .nav-link:focus,
-.nav-link:hover {
-  color: var(--p-color);
-} */
 
 .navbar-toggler {
   border: 0;
@@ -179,4 +174,21 @@ h4 span {
 
 .navbar-toggler .navbar-toggler-icon:after {
   top: 8px;
+}
+
+.navbar a:hover {
+  color: var(--primary-color);
+}
+
+.navbar a strong {
+  font-weight: bold;
+}
+
+#languages {
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+.container .navbar-toggler:focus {
+  box-shadow: none;
 }

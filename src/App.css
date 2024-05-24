@@ -1,0 +1,138 @@
+.app {
+  /*---------------------------------------
+  RESPONSIVE STYLES               
+-----------------------------------------*/
+  @media screen and (max-width: 1200px) {
+    h1 {
+      font-size: 62px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    h1 {
+      font-size: 42px;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+
+    h3 {
+      font-size: 32px;
+    }
+
+    h4 {
+      font-size: 28px;
+    }
+
+    h5 {
+      font-size: 24px;
+    }
+
+    h6 {
+      font-size: 20px;
+    }
+
+    .lead {
+      font-size: 16px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+      margin-top: 1rem;
+    }
+
+    .site-header {
+      background-position: bottom;
+    }
+
+    #cart-modal .modal-header .btn-close {
+      margin: 22px 14px;
+    }
+
+    .custom-btn {
+      font-size: 14px;
+      padding: 13.5px 20px;
+    }
+
+    .slick-slideshow .custom-btn {
+      padding-right: 27px;
+      padding-left: 27px;
+    }
+
+    .social-login,
+    .div-separator {
+      width: 75% !important;
+    }
+
+    #cart-modal .modal-footer .row {
+      width: 100% !important;
+    }
+
+    .site-header.section-padding,
+    .section-padding {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    .site-header-image.section-padding {
+      padding-bottom: 0;
+    }
+
+    .header-info {
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
+
+    .header-image {
+      position: relative;
+      top: auto;
+      bottom: 0;
+      left: 0;
+      width: auto;
+      height: auto;
+    }
+
+    .slick-testimonial-caption {
+      padding: 6rem 3rem 4rem 3rem;
+    }
+
+    .slick-slideshow .slick-dots li {
+      width: 25px;
+      height: 25px;
+    }
+
+    .modal-header {
+      padding-top: 6rem;
+      padding-bottom: 2rem;
+    }
+
+    .modal-body {
+      padding: 2rem;
+    }
+
+    #cart-modal .modal-footer {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    #cart-modal .modal-body {
+      padding: 4rem 2rem 2rem 2rem;
+    }
+
+    .full-image-img {
+      bottom: 0;
+    }
+  }
+
+  #languages {
+    padding: 4px 6px;
+    border-radius: 6px;
+  }
+
+  @media (max-width: 991px) {
+    .language-container {
+      margin: 16px 20px;
+    }
+  }
+}
