@@ -1,4 +1,168 @@
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+  --white-color: #ffffff;
+  --primary-color: #ff4400;
+  --section-bg-color: #f0f8ff;
+  --dark-color: #000000;
+  --grey-color: #d0d1d1;
+  --p-color: #717275;
+
+  --body-font-family: 'Inter', sans-serif;
+
+  --h5-font-size: 24px;
+  --p-font-size: 20px;
+  --copyright-text-font-size: 16px;
+  --product-link-font-size: 14px;
+  --custom-link-font-size: 12px;
+
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}
+
+/*---------------------------------------
+  CUSTOM LINK               
+-----------------------------------------*/
+.custom-link {
+  color: var(--p-color);
+  font-size: var(--custom-link-font-size);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  position: relative;
+}
+
+.custom-link i {
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  left: 100%;
+  transition: all 0.3s;
+  line-height: normal;
+}
+
+.custom-link:hover i {
+  opacity: 1;
+  left: 101%;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-light);
+}
+
+b,
+strong {
+  font-weight: var(--font-weight-bold);
+}
+
+body,
+html {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--white-color);
+  font-family: var(--body-font-family) !important;
+  position: relative;
+}
+
 .app {
+  /*---------------------------------------
+  TYPOGRAPHY               
+-----------------------------------------*/
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--dark-color);
+    line-height: inherit;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: var(--font-weight-bold);
+  }
+
+  h1,
+  h2 {
+    font-weight: var(--font-weight-black);
+  }
+
+  h1 {
+    font-size: 64px;
+    line-height: normal;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 32px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  h6 {
+    font-size: 20px;
+  }
+
+  p {
+    color: var(--p-color);
+    font-size: var(--p-font-size);
+    font-weight: var(--font-weight-light);
+  }
+
+  a,
+  button {
+    touch-action: manipulation;
+    transition: all 0.3s;
+  }
+
+  a {
+    color: var(--p-color);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--primary-color);
+  }
+
+  .text-primary {
+    color: var(--primary-color) !important;
+  }
+
+  ::selection {
+    background: var(--primary-color);
+    color: var(--white-color);
+  }
+
   /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
@@ -134,5 +298,10 @@
     .language-container {
       margin: 16px 20px;
     }
+  }
+
+  .lead {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-light);
   }
 }
