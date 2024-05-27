@@ -1,7 +1,8 @@
 import Carousel from '../../components/carousel';
 import Navbar from '../../components/navbar';
+import FeaturedProducts from '../../components/featured-products';
+import Footer from '../../components/footer';
 import { useTranslation } from 'react-i18next';
-
 import './styles.css';
 
 function Home() {
@@ -87,6 +88,8 @@ function Home() {
           </div>
         </div>
       </section>
+      <FeaturedProducts></FeaturedProducts>
+      <Footer></Footer>
     </div>
   );
 }
