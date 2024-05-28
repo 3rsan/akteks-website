@@ -1,0 +1,16 @@
+/*---------------------------------------
+  SECTION               
+-----------------------------------------*/
+section {
+  content-visibility: auto;
+  contain-intrinsic-size: 700px;
+}
+
+.section-padding {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.featured {
+  background: var(--section-bg-color);
+}

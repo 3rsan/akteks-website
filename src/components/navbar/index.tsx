@@ -1,56 +1,44 @@
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, useEffect, useState } from 'react';
 import './styles.css';
 import { useTranslation } from 'react-i18next';
 import Collapse from 'react-bootstrap/Collapse';
+import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
   const { t: translate, i18n } = useTranslation();
-  //const activeLocale = i18n.resolvedLanguage:
+  const location = useLocation();
   const handleLanguageOnChange = (e: ChangeEvent<HTMLSelectElement>) => {
     i18n.changeLanguage(e.target.value);
   };
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const [activeUrl, setActiveUrl] = useState<string | undefined>();
+
   const onNavbarToggle = () => {
     setIsNavbarOpen((isNavbarOpen) => !isNavbarOpen);
   };
 
-  const onTabClick = (
-    e: React.MouseEvent<HTMLLIElement, MouseEvent>,
-    index: number
-  ) => {
-    e.preventDefault();
-    const updatedTabs = tabs.map((tab, i) => {
-      const isActive = i === index;
-
-      return { ...tab, isActive };
-    });
-    setTabs(updatedTabs);
-  };
-
-  const initialTabs = [
+  const tabs = [
     {
       name: 'home',
-      isActive: true,
-      link: 'index.html',
+      link: '/',
     },
     {
       name: 'about',
-      isActive: false,
-      link: 'about.html',
+      link: '/about',
     },
     {
       name: 'products',
-      isActive: false,
-      link: 'products.html',
+      link: '/products',
     },
     {
       name: 'contact',
-      isActive: false,
-      link: 'contact.html',
+      link: '/contact',
     },
   ];
 
-  const [tabs, setTabs] = useState(initialTabs);
+  useEffect(() => {
+    setActiveUrl(location.pathname);
+  }, [location]);
 
   return (
     <nav className="navbar navbar-expand-lg">
@@ -68,30 +56,29 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <a className="navbar-brand" href="index.html">
+        <Link className="navbar-brand" to="/">
           <strong>
             <span>Akteks</span> Tekstil
           </strong>
-        </a>
+        </Link>
         <Collapse in={isNavbarOpen}>
           <div
             className={`navbar-collapse collapse ${isNavbarOpen ? 'show' : ''}`}
             id="navbarNav"
           >
             <ul className="navbar-nav mx-auto">
-              {tabs.map((tabItem, index) => {
-                const { name, isActive, link } = tabItem;
+              {tabs.map((tabItem) => {
+                const { name, link } = tabItem;
                 return (
-                  <li
-                    className="nav-item"
-                    onClick={(e) => onTabClick(e, index)}
-                  >
-                    <a
-                      className={`nav-link ${isActive ? 'active' : ''}`}
-                      href={link}
+                  <li className="nav-item">
+                    <Link
+                      className={`nav-link ${
+                        activeUrl === link ? 'active' : ''
+                      }`}
+                      to={link}
                     >
                       {translate(name)}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}

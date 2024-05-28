@@ -1,15 +1,13 @@
 import Carousel from '../../components/carousel';
-import Navbar from '../../components/navbar';
 import FeaturedProducts from '../../components/featured-products';
-import Footer from '../../components/footer';
 import { useTranslation } from 'react-i18next';
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 function Home() {
   const { t: translate } = useTranslation();
   return (
     <div className="home">
-      <Navbar></Navbar>
       <Carousel></Carousel>
       <section className="about section-padding">
         <div className="container">
@@ -48,10 +46,10 @@ function Home() {
                         <p>{translate('banner-explanation')}</p>
 
                         <div className="mt-2 mt-lg-auto">
-                          <a href="about.html" className="custom-link mb-2">
+                          <Link to="/about" className="custom-link mb-2">
                             {translate('more-information')}
                             <i className="bi-arrow-right ms-2"></i>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -79,17 +77,16 @@ function Home() {
                   <span>{translate('sales')}</span>
                 </h2>
                 <p className="lead mb-4">{translate('sales-information')}</p>
-                <a href="products.html" className="custom-link turkish">
+                <Link to="/products" className="custom-link">
                   {translate('examine-product')}
                   <i className="bi-arrow-right ms-2"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
       <FeaturedProducts></FeaturedProducts>
-      <Footer></Footer>
     </div>
   );
 }

@@ -1,0 +1,215 @@
+{
+  "products": [
+    {
+      "productName": "man-1",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "man-2",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "empty",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "woman-7",
+      "imageFormat": "jpeg",
+      "gender": "woman"
+    },
+    {
+      "productName": "woman-8",
+      "imageFormat": "jpeg",
+      "gender": "woman"
+    },
+    {
+      "productName": "woman-9",
+      "imageFormat": "jpeg",
+      "gender": "woman"
+    },
+    {
+      "productName": "woman-1",
+      "imageFormat": "jpg",
+      "gender": "woman"
+    },
+    {
+      "productName": "woman-2",
+      "imageFormat": "jpg",
+      "gender": "woman"
+    },
+    {
+      "productName": "woman-3",
+      "imageFormat": "jpeg",
+      "gender": "woman"
+    },
+    {
+      "productName": "woman-4",
+      "imageFormat": "jpeg",
+      "gender": "woman"
+    },
+    {
+      "productName": "woman-5",
+      "imageFormat": "jpeg",
+      "gender": "woman"
+    },
+    {
+      "productName": "woman-6",
+      "imageFormat": "jpeg",
+      "gender": "woman"
+    },
+    {
+      "productName": "woman-10",
+      "imageFormat": "jpeg",
+      "gender": "woman"
+    },
+    {
+      "productName": "cleanup/boxer-vincent-1",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/boxer-vincent-2",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/boxer-vincent-3",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/boxer-vincent-4",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/boxer-vincent-5",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "empty",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/clark-crown-1",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/clark-crown-2",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/clark-crown-3",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/clark-crown-4",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/clark-crown-5",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/clark-crown-6",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+
+    {
+      "productName": "cleanup/stark-soul-1",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/stark-soul-2",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/stark-soul-3",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/stark-soul-4",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/stark-soul-5",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/stark-soul-6",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/stark-soul-7",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/stark-soul-8",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/stark-soul-9",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/clark-crown-14",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/clark-crown-7",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/clark-crown-8",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/clark-crown-9",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/clark-crown-10",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/clark-crown-11",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/clark-crown-12",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    },
+    {
+      "productName": "cleanup/clark-crown-13",
+      "imageFormat": "jpeg",
+      "gender": "man"
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import './styles.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 
 function Carousel() {
   const { t: translate } = useTranslation();
@@ -29,9 +30,9 @@ function Carousel() {
                     {translate('who-we-are-explanation')}
                   </p>
 
-                  <a href="about.html" className="btn custom-btn">
+                  <Link to="/about" className="btn custom-btn">
                     {translate('about')}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -51,9 +52,9 @@ function Carousel() {
                     {translate('production-explanation')}
                   </p>
 
-                  <a href="product.html" className="btn custom-btn">
+                  <Link to="/products" className="btn custom-btn">
                     {translate('examine-product')}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

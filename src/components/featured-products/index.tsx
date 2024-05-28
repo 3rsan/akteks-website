@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import ProductCard from '../product-card';
 import './styles.css';
 import { useTranslation } from 'react-i18next';
 
@@ -19,7 +21,7 @@ function FeaturedProducts() {
     },
   ];
   return (
-    <div className="featured-product section-padding">
+    <section className="featured-product section-padding">
       <div className="container">
         <div className="row">
           <div className="col-12 text-center">
@@ -30,30 +32,21 @@ function FeaturedProducts() {
             const { productName, imageFormat } = featuredProduct;
             return (
               <div className="col-lg-4 col-12 mb-3">
-                <div className="product-thumb">
-                  <a href="products.html">
-                    <img
-                      src={`images/product/${productName}.${imageFormat}`}
-                      className="img-fluid product-image"
-                      alt=""
-                    />
-                  </a>
-                </div>
+                <ProductCard
+                  imageUrl={`product/${productName}.${imageFormat}`}
+                ></ProductCard>
               </div>
             );
           })}
 
           <div className="col-12 text-center">
-            <a
-              href={`products.html${translate('language')}`}
-              className="view-all"
-            >
+            <Link to={`/products${translate('language')}`} className="view-all">
               {translate('view-all')}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

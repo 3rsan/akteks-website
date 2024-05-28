@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './styles.css';
 import { useTranslation } from 'react-i18next';
 
@@ -10,7 +11,7 @@ function Footer() {
           <div className="row">
             <div className="col-lg-3 col-10 me-auto mb-4">
               <h4 className="text-white mb-3">
-                <a href="index.html">Akteks</a> Tekstil
+                <Link to="/">Akteks</Link> Tekstil
               </h4>
               <p className="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">
                 Copyright © 2023 <strong>Akteks Tekstil</strong>
@@ -23,30 +24,30 @@ function Footer() {
 
               <ul className="footer-menu d-flex flex-wrap">
                 <li className="footer-menu-item">
-                  <a
-                    href={`about.html#${translate('language')}`}
+                  <Link
+                    to={`/about#${translate('language')}`}
                     className="footer-menu-link"
                   >
                     {translate('about')}
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="footer-menu-item">
-                  <a
-                    href={`products.html#${translate('language')}`}
+                  <Link
+                    to={`/products#${translate('language')}`}
                     className="footer-menu-link"
                   >
                     {translate('products')}
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="footer-menu-item">
-                  <a
-                    href={`contact.html#${translate('language')}`}
+                  <Link
+                    to={`/contact#${translate('language')}`}
                     className="footer-menu-link"
                   >
                     {translate('contact')}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -56,31 +57,31 @@ function Footer() {
 
               <ul className="social-icon">
                 <li>
-                  <a
-                    href="https://www.youtube.com/"
+                  <Link
+                    to="https://www.youtube.com/"
                     className="social-icon-link bi-youtube"
-                  ></a>
+                  ></Link>
                 </li>
 
                 <li>
-                  <a
-                    href="https://www.whatsapp.com/"
+                  <Link
+                    to="https://www.whatsapp.com/"
                     className="social-icon-link bi-whatsapp"
-                  ></a>
+                  ></Link>
                 </li>
 
                 <li>
-                  <a
-                    href="https://www.instagram.com/"
+                  <Link
+                    to="https://www.instagram.com/"
                     className="social-icon-link bi-instagram"
-                  ></a>
+                  ></Link>
                 </li>
 
                 <li>
-                  <a
-                    href="https://www.skype.com/"
+                  <Link
+                    to="https://www.skype.com/"
                     className="social-icon-link bi-skype"
-                  ></a>
+                  ></Link>
                 </li>
               </ul>
             </div>
