@@ -1,4 +1,35 @@
 /*---------------------------------------
+  CONTACT              
+-----------------------------------------*/
+.container .contact-info {
+  padding: 40px;
+}
+
+.contact-form .form-control {
+  border-color: var(--grey-color);
+  font-weight: var(--font-weight-normal);
+}
+
+.form-floating > label {
+  color: var(--grey-color);
+  font-weight: var(--font-weight-normal);
+}
+
+.contact-form button[type='submit'] {
+  background: var(--dark-color);
+  border: none;
+  border-radius: 100px;
+  color: var(--white-color);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  padding: 16px;
+}
+
+.contact-form button[type='submit']:hover {
+  background: var(--primary-color);
+}
+
+/*---------------------------------------
   PRODUCT               
 -----------------------------------------*/
 .front-product {
@@ -163,7 +194,7 @@
 }
 
 b,
-strong {
+.app strong {
   font-weight: var(--font-weight-bold);
 }
 

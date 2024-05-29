@@ -9,7 +9,7 @@ function Products() {
     <>
       <header className="site-header section-padding d-flex justify-content-center align-items-center">
         <div className="col-lg-10 col-12">
-          <h1 className="turkish">
+          <h1>
             <span className="d-block text-primary">
               {translate('our-products')}
             </span>

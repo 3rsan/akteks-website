@@ -24,5 +24,20 @@
   "view-all": "Tümünü Gör",
   "our-products": "Ürünlerimiz",
   "man": "Erkek",
-  "woman": "Kadın"
+  "woman": "Kadın",
+  "mission-vision": "Misyon & Vizyon",
+  "about-explanation-1": "1995 yılında başladığımız tekstil serüvenimizde gecelik pijama ve iç çamaşırı ana branşımız olmuştur, ilgili ürünlerle üretim ve satış faaliyetlerimiz ülke içine servis vermenin yanında, Amerika, Fransa, Rusya, Polonya, Romanya, Yunanistan, Slovakya ve Macaristan ülkelerine ihracat olarak gerçekleşmiştir. Tekstil serüvenimiz, halen Almanya’ya bay, bayan modellerinde iç çamaşır ihracatı şeklinde devam etmektedir.",
+  "about-explanation-2": "Temel değerlerimiz; sorumluluk, kalite, yenilik, verimlilik ve sürdürülebilirlik ile müşteri memnuniyetini sağlamaktır.",
+  "about-explanation-3": "Tedarikçilerimiz, çözüm ortaklarımız ve ekip arkadaşlarımız ile toplum için değer üretmeyi hedefliyoruz.",
+  "about-explanation-4": "Hazırlanan tasarımın gerçeğe dönüşmesi için, özenle tüm detayları dikkate alarak ve sağlıklı iletişim ile, üretim için gerekli planlama sürecini gerçekleştiriyoruz.",
+  "about-explanation-5": "İplikten mamule kadar olan periyodun tümü profesyonelce işletilerek, ürünlerin kalite standartları, talebe uygun düzeyde olması sağlanarak müşterilerimize servisi yapılmaktadır.",
+  "about-explanation-6": "Sektördeki tecrübemiz ve üretimi takip becerimiz ile müşteri memnuniyetinin esas olduğu, sürdürülebilir bir üretim için çalışıyoruz.",
+  "full-name": "Ad Soyad",
+  "email-address": "Eposta Adresi",
+  "subject": "Konu",
+  "message": "Açıklama",
+  "send": "Gönder",
+  "email": "Mail",
+  "phone": "Telefon",
+  "address": "Adres"
 }
