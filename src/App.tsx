@@ -6,12 +6,12 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Home from './pages/home';
 import Products from './pages/products';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 
 function App() {
   return (
     <div className="app">
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <Navbar></Navbar>
         <Routes>
@@ -21,7 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
         <Footer></Footer>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

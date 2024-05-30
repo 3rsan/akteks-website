@@ -128,7 +128,7 @@
   padding-bottom: 10rem;
 }
 
-.header-image {
+.navbar .header-image {
   position: absolute;
   top: 0;
   right: 0;
@@ -166,7 +166,7 @@
 /*---------------------------------------
   CUSTOM LINK               
 -----------------------------------------*/
-.custom-link {
+.app .custom-link {
   color: var(--p-color);
   font-size: var(--custom-link-font-size);
   font-weight: var(--font-weight-bold);

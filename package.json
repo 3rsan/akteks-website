@@ -6,12 +6,14 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/headroom": "^0.12.4",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.97",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
     "bootstrap": "^5.0.1",
     "bootstrap-icons": "^1.11.3",
+    "headroom.js": "^0.12.0",
     "i18next": "^23.11.5",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
@@ -50,6 +52,9 @@
     ]
   },
   "devDependencies": {
-    "@types/react-slick": "^0.23.13"
+    "@types/headroom.js": "^0.12.4",
+    "@types/react-headroom": "^3.2.3",
+    "@types/react-slick": "^0.23.13",
+    "nodemon": "^3.1.2"
   }
 }

@@ -3,6 +3,7 @@ import './styles.css';
 import { useTranslation } from 'react-i18next';
 import Collapse from 'react-bootstrap/Collapse';
 import { Link, useLocation } from 'react-router-dom';
+import Headroom from 'headroom.js';
 
 function Navbar() {
   const { t: translate, i18n } = useTranslation();
@@ -16,6 +17,12 @@ function Navbar() {
   const onNavbarToggle = () => {
     setIsNavbarOpen((isNavbarOpen) => !isNavbarOpen);
   };
+
+  useEffect(() => {
+    const myElement: any = document.querySelector('.navbar');
+    const headroom = new Headroom(myElement);
+    headroom.init();
+  }, []);
 
   const tabs = [
     {
