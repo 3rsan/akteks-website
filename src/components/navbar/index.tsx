@@ -48,38 +48,39 @@ function Navbar() {
   }, [location]);
 
   return (
-    <nav className="navbar navbar-expand-lg">
-      <div className="container">
+    <nav className='navbar navbar-expand-lg'>
+      <div className='container'>
         <button
           className={`navbar-toggler ${!isNavbarOpen ? 'collapsed' : ''}`}
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          type='button'
+          data-bs-toggle='collapse'
+          data-bs-target='#navbarNav'
+          aria-controls='navbarNav'
           aria-expanded={isNavbarOpen}
-          aria-label="Toggle navigation"
+          aria-label='Toggle navigation'
           onClick={onNavbarToggle}
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className='navbar-toggler-icon'></span>
         </button>
 
-        <Link className="navbar-brand" to="/">
+        <Link className='navbar-brand' to='/'>
           <strong>
             <span>Akteks</span> Tekstil
           </strong>
         </Link>
         <Collapse in={isNavbarOpen}>
-          <div className={`navbar-collapse`} id="navbarNav">
-            <ul className="navbar-nav mx-auto">
+          <div className={`navbar-collapse`} id='navbarNav'>
+            <ul className='navbar-nav mx-auto'>
               {tabs.map((tabItem) => {
                 const { name, link } = tabItem;
                 return (
-                  <li className="nav-item">
+                  <li className='nav-item'>
                     <Link
                       className={`nav-link ${
                         activeUrl === link ? 'active' : ''
                       }`}
                       to={link}
+                      onClick={onNavbarToggle}
                     >
                       {translate(name)}
                     </Link>
@@ -88,18 +89,18 @@ function Navbar() {
               })}
             </ul>
 
-            <div className="language-container">
+            <div className='language-container'>
               <select
-                name="languages"
-                id="languages"
+                name='languages'
+                id='languages'
                 onChange={handleLanguageOnChange}
               >
-                <option value="tr">Türkçe</option>
-                <option value="en">English</option>
-                <option value="de">Deutsch</option>
-                <option value="es">Español</option>
-                <option value="ru">Русский</option>
-                <option value="ar">العربية</option>
+                <option value='tr'>Türkçe</option>
+                <option value='en'>English</option>
+                <option value='de'>Deutsch</option>
+                <option value='es'>Español</option>
+                <option value='ru'>Русский</option>
+                <option value='ar'>العربية</option>
               </select>
             </div>
           </div>
