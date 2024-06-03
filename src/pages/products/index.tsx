@@ -28,10 +28,10 @@ function Products() {
             </div>
             {productData.products
               .filter((item) => item.gender === 'man')
-              .map((product) => {
+              .map((product, index) => {
                 const { productName, imageFormat } = product;
                 return (
-                  <div className="col-lg-4 col-12 mb-3">
+                  <div key={index} className="col-lg-4 col-12 mb-3">
                     <ProductCard
                       imageUrl={`product/${productName}.${imageFormat}`}
                     ></ProductCard>
@@ -44,10 +44,10 @@ function Products() {
             </div>
             {productData.products
               .filter((item) => item.gender === 'woman')
-              .map((product) => {
+              .map((product, index) => {
                 const { productName, imageFormat } = product;
                 return (
-                  <div className="col-lg-4 col-12 mb-3">
+                  <div key={index} className="col-lg-4 col-12 mb-3">
                     <ProductCard
                       imageUrl={`product/${productName}.${imageFormat}`}
                     ></ProductCard>

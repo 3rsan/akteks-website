@@ -28,10 +28,10 @@ function FeaturedProducts() {
             <h2 className="mb-5">{translate('featured-products')}</h2>
           </div>
 
-          {featuredProducts.map((featuredProduct) => {
+          {featuredProducts.map((featuredProduct, index) => {
             const { productName, imageFormat } = featuredProduct;
             return (
-              <div className="col-lg-4 col-12 mb-3">
+              <div key={index} className="col-lg-4 col-12 mb-3">
                 <ProductCard
                   imageUrl={`product/${productName}.${imageFormat}`}
                 ></ProductCard>
