@@ -8,12 +8,16 @@ function Products() {
   return (
     <>
       <header className="site-header section-padding d-flex justify-content-center align-items-center">
-        <div className="col-lg-10 col-12">
-          <h1>
-            <span className="d-block text-primary">
-              {translate('our-products')}
-            </span>
-          </h1>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-10 col-12">
+              <h1>
+                <span className="d-block text-primary">
+                  {translate('our-products')}
+                </span>
+              </h1>
+            </div>
+          </div>
         </div>
       </header>
       <section className="featured-product section-padding">
