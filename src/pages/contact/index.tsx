@@ -29,7 +29,7 @@ function Contact() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-12">
-              <form className="contact-form me-lg-5 pe-lg-3" role="form">
+              <form className="contact-form me-lg-5 pe-lg-3">
                 <div className="form-floating">
                   <input
                     type="text"
