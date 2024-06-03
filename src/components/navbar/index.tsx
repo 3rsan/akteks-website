@@ -69,10 +69,7 @@ function Navbar() {
           </strong>
         </Link>
         <Collapse in={isNavbarOpen}>
-          <div
-            className={`navbar-collapse collapse ${isNavbarOpen ? 'show' : ''}`}
-            id="navbarNav"
-          >
+          <div className={`navbar-collapse`} id="navbarNav">
             <ul className="navbar-nav mx-auto">
               {tabs.map((tabItem) => {
                 const { name, link } = tabItem;
